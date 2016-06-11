@@ -1,7 +1,7 @@
 .PHONY: bootstrap bundle bundle-dev lint run-bundle
 
 bin = ./node_modules/.bin
-bastion = $(bin)/bastion-dev
+bastion = BASTION_LOG_LEVEL=silly $(bin)/bastion-dev
 
 bootstrap:
 	npm install
