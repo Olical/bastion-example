@@ -16,18 +16,15 @@ bootstrap:
 	# tooling soup for you.
 	npm install
 
-bundle:
+bastion:
 	# Bundles src/index.js into dist/bundle.js
 	# Essentially a production build.
-	$(bastion) bundle
+	# Performs all checks
+	$(bastion)
 
-bundle-dev:
+bastion-dev:
 	# Creates a live reloading server for src/index.js
 	# Open localhost:8080 and it'll live reload dist/bundle.js
 	# All of these paths are just assumed defaults, they're easy to change
-	$(bastion) bundle --dev
-
-lint:
-	# Lint everything with standard
-	# You can configure the paths here too
-	$(bastion) lint
+	# Also checks files as you change them
+	$(bastion) --dev
