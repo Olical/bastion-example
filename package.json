@@ -9,7 +9,9 @@
   "author": "",
   "description": "",
   "dependencies": {
-    "bastion": "^1.4.0"
+    "bastion": "^1.4.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   },
   "standard": {
     "parser": "babel-eslint"

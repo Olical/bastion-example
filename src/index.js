@@ -1,12 +1,6 @@
-function slowUpperCase (msg) {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(msg.toUpperCase()), 1000)
-  })
-}
+import React from 'react'
+import ReactDOM from 'react-dom'
+import AppRoot from './AppRoot'
 
-async function main () {
-  const result = await slowUpperCase('hello')
-  console.log(`Result is: ${result}`)
-}
-
-main()
+const mountNode = document.getElementById('mount')
+ReactDOM.render(<AppRoot />, mountNode)
