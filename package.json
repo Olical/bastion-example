@@ -9,7 +9,7 @@
   "author": "",
   "description": "",
   "dependencies": {
-    "bastion": "^1.5.0",
+    "bastion": "^1.6.0",
     "elm-hot-loader": "^0.3.3",
     "elm-webpack-loader": "^3.0.3",
     "react": "^15.1.0",
