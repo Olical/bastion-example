@@ -11,7 +11,7 @@ export function webpack (config, options) {
     loaders: ['elm-webpack']
   })
 
-  config.resolve.extensions = ['', '.js', '.elm']
+  config.resolve.extensions.push('.elm')
 
   if (options.dev) {
     // Add the hot module loader
