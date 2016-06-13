@@ -16,13 +16,13 @@ bootstrap:
 	# tooling soup for you.
 	npm install
 
-bastion:
+build:
 	# Bundles src/index.js into dist/bundle.js
 	# Essentially a production build.
 	# Performs all checks
 	$(bastion)
 
-bastion-dev:
+dev:
 	# Creates a live reloading server for src/index.js
 	# Open localhost:8080 and it'll live reload dist/bundle.js
 	# All of these paths are just assumed defaults, they're easy to change
