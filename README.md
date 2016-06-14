@@ -10,6 +10,12 @@ The only configuration is a couple of simple lines in `bastion.conf.js`, you don
 
 That configuration calls the pre-built mixins for React HMR and seamless Elm support, again with HMR. I hope to add more of these for things like CSS and image importing.
 
+## Usage
+
+You can compile the code into `./dist/bundle.js` with `make build`. If you have bastion installed globally you can just run `bastion`, that's all the makefile is doing.
+
+There's also `make dev` which just maps to `bastion --dev`. This starts the dev server (at port `8080` by default) and will automatically hot reload modules as you change them.
+
 ## Want to know more?
 
 Check out the [bastion][] repository as well as the files within this one. Especially `bastion.conf.js`, `Makefile` and `./src/entry.js`.
