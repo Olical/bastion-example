@@ -1,6 +1,6 @@
 # bastion-example
 
-Say hello to [bastion][]! It builds JavaScript related things for you.
+Say hello to [bastion][]! It builds JavaScript related things for you with zero configuration. Don't worry, there's a powerful configuration file, but the defaults are pretty great!
 
 ## What's this?
 
