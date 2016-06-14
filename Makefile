@@ -8,7 +8,7 @@ bin = ./node_modules/.bin
 # You can set the log levels of winston with this environment variable
 # Generally verbose will be enough, you won't really get logs without this
 # Other than error and warning
-bastion = BASTION_LOG_LEVEL=silly $(bin)/bastion-dev
+bastion = BASTION_LOG_LEVEL=silly $(bin)/bastion
 
 bootstrap:
 	# Fetch the dependencies

@@ -8,7 +8,7 @@
   "license": "ISC",
   "author": "",
   "description": "",
-  "dependencies": {
+  "devDependencies": {
     "bastion": "^1.6.0",
     "elm-hot-loader": "^0.3.3",
     "elm-webpack-loader": "^3.0.3",

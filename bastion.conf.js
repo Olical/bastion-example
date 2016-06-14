@@ -1,30 +1,8 @@
-import {last} from 'lodash'
-
-export function webpack (config, options) {
-  // You can inspect the config structure easily
-  // console.log(config)
-
-  // Add the elm loader
-  config.module.loaders.push({
-    test: /\.elm$/,
-    exclude: [/elm-stuff/, /node_modules/],
-    loaders: ['elm-webpack']
-  })
-
-  config.resolve.extensions.push('.elm')
-
-  if (options.dev) {
-    // Add the hot module loader
-    // Has to come before babel, so we unshift
-    config.module.loaders.unshift({
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'react-hot'
-    })
-
-    // Enable hot Elm reloading
-    last(config.module.loaders).loaders.unshift('elm-hot')
-  }
-
-  return config
+// This function is given the webpack configuration as the first argument.
+// It receives the CLI options as the second argument, I just don't need them here.
+export function webpack () {
+  // I'm using pre-configured webpack mixins.
+  // They mutate the config object for you.
+  this.react()
+  this.elm()
 }
