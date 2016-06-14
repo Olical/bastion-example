@@ -1,9 +1,17 @@
 # bastion-example
 
-This project showcases the features of [bastion][], a command line tool that simplifies usage of a modern JavaScript toolchain. There aren't really many settings because bastion assumes a LOT of defaults, but you can find the custom config tweaks in `bastion.conf.js`.
+Say hello to [bastion][]! It builds JavaScript related things for you.
 
-Check out the `Makefile`, `bastion.conf.js` and the [bastion][] documentation for more information. You'll also notice that there's some Elm code seamlessly embedded in the JavaScript.
+## What's this?
 
-This repository has hot reloaded React and Elm side by side with a few very simple config lines that simply instantiate plugins.
+In this repository you'll find Elm and React code side by side with hot module reloading. That means you can change the code and it'll update live in your browser without losing the state.
+
+The only configuration is a couple of simple lines in `bastion.conf.js`, you don't even need that if you just want a simple JavaScript application. You could still use React without this configuration file, the live reloading just wouldn't maintain state.
+
+That configuration calls the pre-built mixins for React HMR and seamless Elm support, again with HMR. I hope to add more of these for things like CSS and image importing.
+
+## Want to know more?
+
+Check out the [bastion][] repository as well as the files within this one. Especially `bastion.conf.js`, `Makefile` and `./src/entry.js`.
 
 [bastion]: https://github.com/Olical/bastion
